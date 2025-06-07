@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Teacher - Homework Tracker</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Teacher - Homework Manager</h2>
+
+    <form id="homeworkForm">
+      <input type="hidden" id="homeworkId" />
+      <div>
+        <label>Subject:</label><br />
+        <input type="text" id="subject" required />
+      </div>
+      <div>
+        <label>Description:</label><br />
+        <textarea id="description" required></textarea>
+      </div>
+      <div>
+        <label>Date (YYYY-MM-DD):</label><br />
+        <input type="date" id="date" required />
+      </div>
+      <div>
+        <label>Deadline (YYYY-MM-DD):</label><br />
+        <input type="date" id="deadline" required />
+      </div>
+      <br />
+      <button type="submit" class="btn">Add / Update Homework</button>
+    </form>
+
+    <h3>Homework List</h3>
+    <div id="homeworkList"></div>
+
+  </div>
+
+  <script type="module" src="teacher.js"></script>
+</body>
+</html>
